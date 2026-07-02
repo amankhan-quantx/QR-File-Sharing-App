@@ -28,7 +28,13 @@ public class FileMetadata {
     @Column(name = "file_path", nullable = false)
     private String filePath;
 
+    @Column(name = "qr_path")
+    private String qrPath;
+
     @Column(name = "upload_time")
     private LocalDateTime uploadTime;
+
+    @Column(name = "expires_at")
+    private LocalDateTime expiresAt;
 
 }

@@ -1,39 +1,65 @@
 package com.aman.qrfilesharing.service;
 
-import org.springframework.stereotype.Service;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @Service
 public class QRCodeService {
-    public String generateQRCode(String text)
-        throws WriterException, IOException {
 
-        QRCodeWriter qrCodeWriter = new QRCodeWriter();
+    // ======================================
+    // Logger
+    // ======================================
 
-        BitMatrix bitMatrix = qrCodeWriter.encode(
-            text,
-            BarcodeFormat.QR_CODE,
-            300,
-            300
-            
-        );
-        Path path = Paths.get("uploads", "qr.png");
+    private static final Logger logger =
+            LoggerFactory.getLogger(QRCodeService.class);
+
+    // ======================================
+    // QR Code Generation
+    // ======================================
+
+    public String generateQRCode(
+            String text,
+            Long id)
+            throws WriterException, IOException {
+
+        QRCodeWriter qrCodeWriter =
+                new QRCodeWriter();
+
+        BitMatrix bitMatrix =
+                qrCodeWriter.encode(
+                        text,
+                        BarcodeFormat.QR_CODE,
+                        300,
+                        300
+                );
+
+        String qrFileName = "qr_" + id + ".png";
+
+        Path path =
+                Paths.get("uploads", qrFileName);
+
         MatrixToImageWriter.writeToPath(
-            bitMatrix,
-            "PNG",
-            path
+                bitMatrix,
+                "PNG",
+                path
+        );
+
+        logger.info(
+                "QR Code generated successfully: {}",
+                qrFileName
         );
 
         return path.toString();
     }
-
 }
