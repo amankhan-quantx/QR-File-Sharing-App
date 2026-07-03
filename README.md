@@ -106,8 +106,8 @@ QR-File-Sharing-App
 
 
 ### Search Files
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/68ac970b-b59a-4ae2-ab58-3003b8096ddc" />
 
-> Coming Soon
 
 ---
 
