@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: qr-file-sharing
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/qr_file_sharing
+    username: postgres
+    password: aman123
+
+  servlet:
+    multipart:
+      max-file-size: 150MB
+      max-request-size: 150MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+logging:
+  level:
+    org.springframework: INFO
+
+app:
+  upload-dir: uploads
+  base-url: http://localhost:8080 
