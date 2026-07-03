@@ -87,16 +87,23 @@ QR-File-Sharing-App
 ## 📸 Screenshots
 
 ### Dashboard
+<img width="1920" height="1020" alt="Screenshot 2026-07-04 001027" src="https://github.com/user-attachments/assets/3fd6fea2-2b49-4651-bdef-5f75fc9c4e0a" />
 
-> Coming Soon
 
 ### Upload File
+<img width="1920" height="1020" alt="Screenshot 2026-07-04 001153" src="https://github.com/user-attachments/assets/af5e5974-6c1e-4cd9-9f83-92b6f2cdd075" />
+<img width="1920" height="1020" alt="Screenshot 2026-07-04 001259" src="https://github.com/user-attachments/assets/9622e4d9-e37a-4fdc-9a05-e2630affc7a1" />
+<img width="1920" height="1020" alt="Screenshot 2026-07-04 001405" src="https://github.com/user-attachments/assets/bf5c1ec4-170f-429e-a346-9c7f185c8c0b" />
 
-> Coming Soon
+
+
 
 ### QR Code
+<img width="1920" height="1020" alt="Screenshot 2026-07-04 001450" src="https://github.com/user-attachments/assets/5fa7c1c5-f915-4264-875d-0cdd06b41510" />
+<img width="561" height="535" alt="Screenshot 2026-07-04 001944" src="https://github.com/user-attachments/assets/ddc14354-3ff8-4240-8830-1ab4b66a2935" />
+<img width="1920" height="1020" alt="Screenshot 2026-07-04 002134" src="https://github.com/user-attachments/assets/3b461644-ba6c-4fe5-8da9-f0d33ebbdf4e" />
 
-> Coming Soon
+
 
 ### Search Files
 
