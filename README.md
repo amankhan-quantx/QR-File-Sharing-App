@@ -57,7 +57,6 @@ A full-stack file sharing application built with **Spring Boot**, **React**, and
 - Git
 - GitHub
 - VS Code
-- IntelliJ IDEA
 - Postman
 
 ---
